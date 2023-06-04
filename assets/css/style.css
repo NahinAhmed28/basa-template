@@ -1,0 +1,42 @@
+.topImage{
+    background-image:linear-gradient(rgba(138, 138, 138, 0.5), rgba(138, 138, 138, 0.5)),
+    url('../images/rivers.jpg');
+    height: 50vh;
+    background-size: cover;
+}
+
+.semi-rounded-border{
+    border-radius: 10px !important;
+}
+.rounded-input{
+    border-radius: 35px !important;
+}
+.blog-description{
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+    letter-spacing: 0em !important;
+    text-align: left !important;
+
+}
+.parent-img{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.image2 {
+    position: absolute;
+    top: 44%;
+    left: 45%;
+    width: 10% !important;
+    height: 15%;
+}
+.date{
+
+}
