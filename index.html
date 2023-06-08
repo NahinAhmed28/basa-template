@@ -9,20 +9,62 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 <body>
     
-<!--topnavbar-->
-        <div class="d-flex justify-content-center align-items-center position-relative topImage">
-            <a class="btn text-white border bg-success position-absolute top-0 start-0" href="#">Button</a>
-            <a class="btn text-white border bg-success position-absolute top-0 end-0" href="#">Button</a>
-            <h1 class="text-success">blog</h1>
-            <form class="w-50 input-group mb-3 bg-white p-2 semi-rounded-border">
-                <input type="text" class="form-control border-0" placeholder="&#x1F50E অনুসন্ধান করুন" aria-label="Search" aria-describedby="searchButton" >
-                <button class="btn btn-success semi-rounded-border" type="submit" id="searchButton"><i class="bi-search"></i>অনুসন্ধান</button>
-            </form>
-        </div>
+      <div class="container-fluid mt-2">
+          <!--topnavbar-->
+          <div class="row bg-transparent" style="z-index: 9999 ;position: absolute;width: 99.3%">
+              <div class="col-md-2 text-start">
+                  <img src="assets/images/logo.png" alt="Left Image" style="border-bottom-right-radius: 10px;">
+              </div>
+              <div class="col-md-7"></div>
+              <div class="col-md-3 text-end bg-white" style="border-bottom-left-radius: 10px;">
+                  <div class="top-right d-flex align-items-center position-absolute top-0 end-0">
+                      <!-- radion boutton start -->
+                      <div class="form-check form-switch bg-success rounded-pill py-1 mt-1 text-white">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                          <label class="form-check-label" for="flexSwitchCheckDefault">English</label>
+                      </div>
+                      <!-- radion boutton end -->
+                      <!-- collapse button for menu start -->
+                      <div class="dropdown px-2">
+                          <button class="btn rounded-pill bg-light" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa-solid fa-bars"></i> Menu
+                          </button>
+
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                      </div>
+                      <!-- collapse button for menu end -->
+                      <!-- user profile area start-->
+                      <div class="profile d-flex align-items-center">
+                          <img class="h-100 me-3" src="assets/images/user.png" alt="">
+                          <div>
+                              <h6 class="user-name m-0 text-success">Golam Kibria <i class="text-black ms-1 fa-solid fa-caret-down"></i></h6>
+                              <h6 class="m-0 text-muted">Engineer</h6>
+                          </div>
+                      </div>
+                      <!-- user proflile area end -->
+                  </div>
+              </div>
+          </div>
+
+          <!--topimage-->
+          <div class="d-flex justify-content-center flex-column align-items-center position-relative topImage" style="position: relative">
+              <h1 class="text-success fw-bolder">Blog</h1>
+              <form class="w-50 input-group mb-3 bg-white p-2 semi-rounded-border">
+                  <input type="text" class="form-control border-0" placeholder="&#x1F50E অনুসন্ধান করুন" aria-label="Search" aria-describedby="searchButton" >
+                  <button class="btn btn-success semi-rounded-border" type="submit" id="searchButton"><i class="bi-search"></i>অনুসন্ধান</button>
+              </form>
+          </div>
+      </div>
 
          <div class="container" style="background-color: #fafffc">
              <!--option bar-->
@@ -90,7 +132,18 @@
                         <div class="card-body">
                             <p class="text-secondary">জানুয়ারী ২১, ২০২৩</p>
                             <hr>
-                            <p class="text-secondary">reactions count</p>
+                            <div class="react-sec border-top border-bottom py-2 d-flex justify-content-between">
+                                <div class="react">
+                                    <i class="text-primary fa-solid fa-thumbs-up"></i>
+                                    <i class="text-danger fa-brands fa-gratipay"></i>
+                                    <i class="text-warning fa-regular fa-star"></i>
+                                    <span class="text-success">১২৭</span>
+                                </div>
+                                <div class="comment-share text-success">
+                                    <i class="fa-regular fa-comment"></i>৫৬
+                                    <i class="fa-solid fa-share"></i> ২১
+                                </div>
+                            </div>
                             <hr>
                         <div class="text-success d-flex justify-content-around mb-3">
                            <div class=""><i class='bx bx-like' style='color:#1f4e28'></i> লাইক</div>
@@ -125,7 +178,18 @@
                 <div class="card-body">
                     <p class="text-secondary">জানুয়ারী ২১, ২০২৩</p>
                     <hr>
-                    <p class="text-secondary">reactions count</p>
+                    <div class="react-sec border-top border-bottom py-2 d-flex justify-content-between">
+                        <div class="react">
+                            <i class="text-primary fa-solid fa-thumbs-up"></i>
+                            <i class="text-danger fa-brands fa-gratipay"></i>
+                            <i class="text-warning fa-regular fa-star"></i>
+                            <span class="text-success">১২৭</span>
+                        </div>
+                        <div class="comment-share text-success">
+                            <i class="fa-regular fa-comment"></i>৫৬
+                            <i class="fa-solid fa-share"></i> ২১
+                        </div>
+                    </div>
                     <hr>
                     <div class="row text-success">
                         <div class="col-4"><i class='bx bx-like' style='color:#1f4e28' ></i> লাইক</div>
@@ -174,7 +238,18 @@
                 <div class="card-body">
                     <p class="text-secondary">জানুয়ারী ২১, ২০২৩</p>
                     <hr>
-                    <p class="text-secondary">reactions count</p>
+                    <div class="react-sec border-top border-bottom py-2 d-flex justify-content-between">
+                        <div class="react">
+                            <i class="text-primary fa-solid fa-thumbs-up"></i>
+                            <i class="text-danger fa-brands fa-gratipay"></i>
+                            <i class="text-warning fa-regular fa-star"></i>
+                            <span class="text-success">১২৭</span>
+                        </div>
+                        <div class="comment-share text-success">
+                            <i class="fa-regular fa-comment"></i>৫৬
+                            <i class="fa-solid fa-share"></i> ২১
+                        </div>
+                    </div>
                     <hr>
                     <div class="row text-success">
                         <div class="col-4"><i class='bx bx-like' style='color:#1f4e28' ></i> লাইক</div>
@@ -198,17 +273,35 @@
                 <div class="card-body pb-0">
                     <h5 class="card-title fw-bold text-success">বাংলাদেশ সিভিল সার্ভিস প্রশাসন একাডেমীতে জাতীয় শোক-দিবস উদযাপন</h5>
                 </div>
-                <div class="card-body px-0">
-                    <div class="parent-img pb-4">
-                        <img src="assets/images/blog2.png" class="card-img-bottom image1"  style="z-index: 1" alt="...">
-                        <img src="assets/images/playicon.png" class="card-img-bottom image2"  style="z-index: 3" alt="...">
+                <div class="card-body">
+                    <div class="row d-flex pb-3" >
+                        <div class="col-md-6 pe-0" >
+                            <img src="assets/images/blog4.png" alt="..." class="card-img-bottom" style="max-height: 300px">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="parent-img" >
+                                <img src="assets/images/blog5.png" class="card-img-bottom image1"  style="z-index: 1;max-height: 300px" alt="...">
+                                <img src="assets/images/playicon.png" class="card-img-bottom image2 "  style="z-index: 3" alt="...">
+                            </div>
+                        </div>
                     </div>
                     <p class="card-text blog-description px-3">স্বাধীনতার মহান স্থপতি জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমান এঁর ৪৭তম শাহাদাতবার্ষিকী ও জাতীয় শোক দিবস ২০২২ উপলক্ষ্যে বাংলাদেশ সিভিল সার্ভিস প্রশাসন একাডেমী। জীবের মধ্যে সবচেয়ে সম্পূর্ণতা মানুষের। কিন্তু সবচেয়ে অসম্পূর্ণ হয়ে সে জন্মগ্রহণ করে। বাঘ ভালুক তার জীবনযাত্রার পনেরো- আনা মূলধন নিয়ে....</p>
                 </div>
                 <div class="card-body">
                     <p class="text-secondary">জানুয়ারী ২১, ২০২৩</p>
                     <hr>
-                    <p class="text-secondary">reactions count</p>
+                    <div class="react-sec border-top border-bottom py-2 d-flex justify-content-between">
+                        <div class="react">
+                            <i class="text-primary fa-solid fa-thumbs-up"></i>
+                            <i class="text-danger fa-brands fa-gratipay"></i>
+                            <i class="text-warning fa-regular fa-star"></i>
+                            <span class="text-success">১২৭</span>
+                        </div>
+                        <div class="comment-share text-success">
+                            <i class="fa-regular fa-comment"></i>৫৬
+                            <i class="fa-solid fa-share"></i> ২১
+                        </div>
+                    </div>
                     <hr>
                     <div class="row text-success">
                         <div class="col-4"><i class='bx bx-like' style='color:#1f4e28' ></i> লাইক</div>
@@ -232,7 +325,43 @@
 
 
     <!--footer-->
-    <img src="assets/images/footer/ffff.png" class="w-100 img-fluid p-5">
+<!-- footer start -->
+<footer>
+    <div class="bg-footer card mt-5">
+        <img class="rounded mx-auto mt-3 w-25 pb-4" src="assets/images/footer/f-logo.png" alt="">
+        <h5 class="mx-auto text-success fw-bold pb-4">যোগাযোগ</h5>
+        <div  class="row">
+            <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                <h6>সহকারী পরিচালক (আইসিটি) <br>
+                    (সিনিয়র সহকারী সচিব), বিয়াম <br>
+                    <i class="text-success bg-white fa-solid fa-square-phone"></i>
+                    +8801733990436
+                </h6>
+            </div>
+            <!-- cal-a end -->
+            <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-start">
+                <h6>সহকারী পরিচালক (আইসিটি) <br>
+                    (সিনিয়র সহকারী সচিব), বিয়াম <br>
+                    <i class="text-success bg-white fa-solid fa-square-phone"></i>
+                    +8801733990436
+                </h6>
+            </div>
+            <!-- cal-b end -->
+        </div>
+        <div class="social-media text-end mx-5">
+            <a class="" href="#"><i class="mx-1 text-success fs-5 p-2 border border-1 border-success rounded rounded-circle fa-brands fa-facebook"></i></a>
+            <a class="" href="#"><i class="mx-1 text-success fs-5 p-2 border border-1 border-success rounded rounded-circle fa-brands fa-google"></i></a>
+            <a class="" href="#"><i class="mx-1 text-success fs-5 p-2 border border-1 border-success rounded rounded-circle fa-brands fa-youtube"></i></a>
+            <a class="" href="#"><i class="mx-1 text-success fs-5 p-2 border border-1 border-success rounded rounded-circle fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+      <div class="container">
+          <footer class="py-3 my-4">
+              <p class="text-center text-muted">কপিরাইট © বাংলাদেশ এডমিনিস্ট্রেটিভ সার্ভিস এসোসিয়েশন</p>
+          </footer>
+      </div>
 
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 

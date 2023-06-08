@@ -1,5 +1,5 @@
 .topImage{
-    background-image:linear-gradient(rgba(138, 138, 138, 0.5), rgba(138, 138, 138, 0.5)),
+    background-image:linear-gradient(rgba(220, 214, 214, 0.5), rgba(246, 244, 244, 0.8)),
     url('../images/rivers.jpg');
     height: 50vh;
     background-size: cover;
@@ -37,6 +37,17 @@
     width: 10% !important;
     height: 15%;
 }
-.date{
-
+.bg-footer {
+    background-image: url(../images/footer/bg.png);
+    height: 50vh;
+    background-size: cover;
+    border: 0 !important;
+}
+.bg-footer img{
+    width: 100px;
+    height: auto;
+}
+.social-media i:hover{
+    color: #fff !important;
+    background: #198754;
 }
