@@ -38,7 +38,7 @@
     height: 15%;
 }
 .bg-footer {
-    background-image: url(../images/footer/bg.png);
+    background-image: url(../images/footer/bg_old.png);
     height: 50vh;
     background-size: cover;
     border: 0 !important;
@@ -50,4 +50,13 @@
 .social-media i:hover{
     color: #fff !important;
     background: #198754;
+}
+
+.footer {
+    background-image: url(../images/footer/bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 70px 0;
 }
