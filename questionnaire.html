@@ -35,11 +35,11 @@
             <div class="col-md-2 col-xl-2 col-xxl-2  text-start d-flex justify-content-between">
                 <div>
                     <img src="assets/images/logo.png" class="img-fluid logo" alt="Left Image"
-                         style="border-bottom-right-radius: 10px;">
+                        style="border-bottom-right-radius: 10px;">
                 </div>
                 <p class="main_menu_toggle">
                     <a class="btn semi-rounded-borde" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                       aria-expanded="false" aria-controls="collapseExample">
+                        aria-expanded="false" aria-controls="collapseExample">
                         <i class="fa-solid fa-bars"></i>
                     </a>
                 </p>
@@ -50,16 +50,16 @@
                 <div class="col-md-4 text-end bg-white " style="border-bottom-left-radius: 10px;">
                     <div class="top-right d-flex align-items-center  top-0 end-0 py-3">
                         <!-- radion boutton start -->
-                        <div class="form-check form-switch bg-success rounded-pill py-1 mt-1 text-white">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                            <label class="form-check-label" for="flexSwitchCheckDefault">English</label>
-                        </div>
+                        <span class="switcher switcher-1">
+                            <input type="checkbox" id="switcher-1">
+                            <label for="switcher-1"></label>
+                        </span>
                         <!-- radion boutton end -->
 
                         <!-- collapse button for menu start -->
                         <div class="dropdown px-3 d-lg-inline">
                             <button class="btn semi-rounded-border " href="#" role="button" id="dropdownMenuLink"
-                                    data-bs-toggle="dropdown" aria-expanded="false" style="background-color:#D4FFE9;">
+                                data-bs-toggle="dropdown" aria-expanded="false" style="background-color:#D4FFE9;">
                                 <i class="fa-solid fa-bars"></i> Menu
                             </button>
 
@@ -72,7 +72,7 @@
                         <!-- collapse button for menu end -->
                         <!-- user profile area start-->
                         <div class="profile d-flex align-items-center float-end ms-3">
-                            <img class="h-100 me-3" src="assets/images/user.png" alt="">
+                            <img class=" me-3" src="assets/images/user.png" alt="" style="height: 50px;">
                             <div>
                                 <h6 class="user-name m-0 text-success">Golam Kibria <i
                                         class="text-black ms-1 fa-solid fa-caret-down"></i></h6>
@@ -86,19 +86,19 @@
 
             <div class="col-md-2 col-xl-3 col-xxl-6"></div>
             <div class="col-md-8 col-xl-6 col-xxl-4 text-end bg-white main_menu"
-                 style="border-bottom-left-radius: 10px;">
+                style="border-bottom-left-radius: 10px;">
                 <div class="top-right d-flex align-items-center  top-0 end-0">
-                    <!-- radion boutton start -->
-                    <div class="form-check form-switch bg-success rounded-pill py-1 mt-1 text-white">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                        <label class="form-check-label" for="flexSwitchCheckDefault">English</label>
-                    </div>
+
+                    <span class="switcher switcher-1">
+                        <input type="checkbox" id="switcher-1">
+                        <label for="switcher-1"></label>
+                    </span>
                     <!-- radion boutton end -->
 
                     <!-- collapse button for menu start -->
                     <div class="dropdown px-3 d-lg-inline">
                         <button class="btn semi-rounded-border " href="#" role="button" id="dropdownMenuLink"
-                                data-bs-toggle="dropdown" aria-expanded="false" style="background-color:#D4FFE9;">
+                            data-bs-toggle="dropdown" aria-expanded="false" style="background-color:#D4FFE9;">
                             <i class="fa-solid fa-bars"></i> Menu
                         </button>
 
@@ -111,7 +111,7 @@
                     <!-- collapse button for menu end -->
                     <!-- user profile area start-->
                     <div class="profile d-flex align-items-center float-end ms-3">
-                        <img class="h-100 me-3" src="assets/images/user.png" alt="">
+                        <img class=" me-3" src="assets/images/user.png" alt="" style="height: 50px;">
                         <div>
                             <h6 class="user-name m-0 text-success">Golam Kibria <i
                                     class="text-black ms-1 fa-solid fa-caret-down"></i></h6>
@@ -125,12 +125,12 @@
 
         <!--topimage-->
         <div class="d-flex justify-content-center flex-column align-items-center position-relative topImage"
-             style="position: relative">
+            style="position: relative">
             <h1 class="text-success fw-bolder text">Blog</h1>
             <div class="search">
                 <form class="input-group mb-3 bg-white p-2 semi-rounded-border ">
                     <input type="text" class="form-control border-0" placeholder="&#x1F50E অনুসন্ধান করুন"
-                           aria-label="Search" aria-describedby="searchButton">
+                        aria-label="Search" aria-describedby="searchButton">
                     <button class="btn btn-success semi-rounded-border" type="submit" id="searchButton"><i
                             class="bi-search"></i>অনুসন্ধান</button>
                 </form>
@@ -140,7 +140,7 @@
 
 
     <!--body container-->
-    <div class="container pt-4" style="background-color: #fafffc">
+    <div class="container pt-5" style="background-color: #fafffc">
         <!--option bar-->
         <header class="d-flex justify-content-start">
             <ul class="nav nav-pills fw-bold">
@@ -179,24 +179,27 @@
                 <div class="input-group my-1">
                     <img src="assets/images/user.png" alt="..." class="rounded-circle mx-4 h-25">
                     <input type="text" class="form-control rounded-input bg-light"
-                           aria-label="Text input with dropdown button" placeholder="ব্লগ লিখুন... "
-                           data-bs-toggle="modal" data-bs-target="#exampleModal"
-                           style=" text-indent: 15px;">
+                        aria-label="Text input with dropdown button" placeholder="ব্লগ লিখুন... " data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" style=" text-indent: 15px;">
                     <!--  show modal-->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title text-success fw-bolder mx-auto" id="exampleModalLabel">ব্লগ পোস্ট তৈরী করুন</h5>
-                                    <button type="button " class="btn"  data-bs-dismiss="modal" aria-label="Close">
-                                        <i class='bx bxs-x-circle '  style='color:rgba(0,0,0,0.87)'  ></i>
-                                    </button>                                </div>
+                                    <h5 class="modal-title text-success fw-bolder mx-auto" id="exampleModalLabel">ব্লগ
+                                        পোস্ট তৈরী করুন</h5>
+                                    <button type="button " class="btn" data-bs-dismiss="modal" aria-label="Close">
+                                        <i class='bx bxs-x-circle ' style='color:rgba(0,0,0,0.87)'></i>
+                                    </button>
+                                </div>
                                 <div class="modal-body">
                                     <form>
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="শিরোনাম">
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="শিরোনাম">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
@@ -212,20 +215,24 @@
                                             </div>
                                         </div>
                                         <div class="position-relative pt-2">
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="বর্ণনা লিখুন..."></textarea>
-                                            <button type="button" class="btn btn-light position-absolute bottom-0 end-0 m-2" id="emojiButton">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
+                                                placeholder="বর্ণনা লিখুন..."></textarea>
+                                            <button type="button"
+                                                class="btn btn-light position-absolute bottom-0 end-0 m-2"
+                                                id="emojiButton">
                                                 <i class="bi bi-emoji-smile"></i>
                                             </button>
                                         </div>
                                         <div class="d-flex flex-row-reverse">
                                             <button class="btn btn-sm btn-transparent bg-transparent text-success">
-                                                <i class='bx bx-camera' style='color:#366f3e' ></i> ক্যামেরা
+                                                <i class='bx bx-camera' style='color:#366f3e'></i> ক্যামেরা
                                             </button>
                                             <button class="btn btn-sm btn-transparent bg-transparent text-success">
-                                                <i class='bx bx-purchase-tag-alt bx-rotate-90' style='color:#366f3e' ></i> ট্যাগ
+                                                <i class='bx bx-purchase-tag-alt bx-rotate-90'
+                                                    style='color:#366f3e'></i> ট্যাগ
                                             </button>
                                             <button class="btn btn-sm btn-transparent bg-transparent text-success">
-                                                <i class='bx bx-paperclip' style='color:#366f3e'  ></i> অ্যাটাচমেন্ট
+                                                <i class='bx bx-paperclip' style='color:#366f3e'></i> অ্যাটাচমেন্ট
                                             </button>
                                         </div>
                                     </form>
@@ -238,7 +245,7 @@
                     </div>
                     <!--  show modal end-->
                     <button class="btn text-success border-0" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        aria-expanded="false">
                         <i class='bx bxs-down-arrow'></i>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
@@ -264,7 +271,7 @@
                         <h5 class="card-title fw-bold text-success">ক্যাটাগরী টাইটল</h5>
                     </div>
                     <div class="card-body">
-                        <img src="assets/images/blog7.png" class="card-img-bottom pb-4 semi-rounded-border" alt="...">
+                        <img src="assets/images/blog7.png" class=" pb-4 semi-rounded-border blog_img" alt="...">
                         <div class="date-sec my-2">
                             <span><i class="fa-solid fa-clock-rotate-left"></i></span>
                             <span class="text-muted mx-2">বিগত ৭ দিনে নতুন প্রশ্নোত্তর</span>
@@ -288,7 +295,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-6 p-1">
-                                <img src="assets/images/blog8.png" class="card-img-bottom"  alt="...">
+                                <img src="assets/images/blog8.png" class="card-img-bottom" alt="...">
                             </div>
                             <div class="col-md-6 p-1">
                                 <div class="row pb-1">
@@ -321,7 +328,8 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-7 px-0">
-                                <img src="assets/images/blog11.png" class="card-img-bottom semi-rounded-border" alt="...">
+                                <img src="assets/images/blog11.png" class="card-img-bottom semi-rounded-border"
+                                    alt="...">
                             </div>
                             <div class="col-md-5">
                                 <img src="assets/images/blog8.png" class="card-img-bottom" alt="...">
