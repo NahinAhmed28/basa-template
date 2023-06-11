@@ -127,7 +127,7 @@
     }
 }
 
-@media screen and (max-width: 768px) and (min-width: 601px) {
+@media screen and (max-width: 900px) and (min-width: 600px) {
     .topImage {
         background-image: linear-gradient(rgba(220, 214, 214, 0.5), rgba(246, 244, 244, 0.8)),
             url('../images/rivers.jpg');
@@ -135,6 +135,7 @@
         background-size: cover;
         height: 500px;
     }
+
 
     .main_menu {
         display: none;
@@ -161,3 +162,13 @@
         padding: 30px 0;
     }
 }
+
+/* @media screen and (max-width: 1200px) and (min-width: 900px) {
+    .main_menu {
+        display: inline;
+    }
+
+    .main_menu_toggle {
+        display: none;
+    }
+} */

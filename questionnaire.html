@@ -22,34 +22,38 @@
     <div class="container-fluid mt-2 px-lg-5">
         <!--topnavbar-->
         <div class="row bg-transparent menu">
-            <div class="col-md-2 col-xl-2 col-xxl-2  text-start d-flex justify-content-between">
+            <div class="col-md-3 text-start ">
                 <div>
                     <img src="assets/images/logo.png" class="img-fluid logo" alt="Left Image"
-                        style="border-bottom-right-radius: 10px;">
+                         style="border-bottom-right-radius: 10px;">
                 </div>
-                <p class="main_menu_toggle">
+                <p class="main_menu_toggle bg-white">
+                    <!-- <button class="btn semi-rounded-border " href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false" style="background-color:#D4FFE9;">
+
+                </button> -->
                     <a class="btn semi-rounded-borde" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
+                       aria-expanded="false" aria-controls="collapseExample">
                         <i class="fa-solid fa-bars"></i>
                     </a>
                 </p>
 
             </div>
-            <!--small screen-->
+            <!--toggled  options-->
             <div class="collapse main_menu_toggle" id="collapseExample">
-                <div class="col-md-4 text-end bg-white " style="border-bottom-left-radius: 10px;">
+                <div class="col-md-5 text-end bg-white " style="border-bottom-left-radius: 10px;">
                     <div class="top-right d-flex align-items-center  top-0 end-0 py-3">
-                        <!-- radion boutton start -->
+                        <!-- radio button start -->
                         <div class="form-check form-switch bg-success rounded-pill py-1 mt-1 text-white">
                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
                             <label class="form-check-label" for="flexSwitchCheckDefault">English</label>
                         </div>
-                        <!-- radion boutton end -->
+                        <!-- radio button end -->
 
                         <!-- collapse button for menu start -->
-                        <div class="dropdown px-3 d-lg-inline">
+                        <div class="dropdown px-3">
                             <button class="btn semi-rounded-border " href="#" role="button" id="dropdownMenuLink"
-                                data-bs-toggle="dropdown" aria-expanded="false" style="background-color:#D4FFE9;">
+                                    data-bs-toggle="dropdown" aria-expanded="false" style="background-color:#D4FFE9;">
                                 <i class="fa-solid fa-bars"></i> Menu
                             </button>
 
@@ -61,11 +65,11 @@
                         </div>
                         <!-- collapse button for menu end -->
                         <!-- user profile area start-->
-                        <div class="profile d-flex align-items-center float-end ms-3">
+                        <div class="profile d-flex align-items-c ms-1">
                             <img class="h-100 me-3" src="assets/images/user.png" alt="">
                             <div>
-                                <h6 class="user-name m-0 text-success">Golam Kibria <i
-                                        class="text-black ms-1 fa-solid fa-caret-down"></i></h6>
+                                <h6 class="user-name m-0 text-success">Golam Kibria
+                                    <i class="text-black ms-1 fa-solid fa-caret-down "></i></h6>
                                 <h6 class="m-0 text-muted text-start">Engineer</h6>
                             </div>
                         </div>
@@ -74,21 +78,20 @@
                 </div>
             </div>
 
-            <div class="col-md-2 col-xl-3 col-xxl-6"></div>
-            <div class="col-md-8 col-xl-6 col-xxl-4 text-end bg-white main_menu"
-                style="border-bottom-left-radius: 10px;">
+            <div class="col-md-4"></div>
+            <div class="col-md-5 text-end bg-white main_menu" style="border-bottom-left-radius: 10px;">
                 <div class="top-right d-flex align-items-center  top-0 end-0">
                     <!-- radion boutton start -->
                     <div class="form-check form-switch bg-success rounded-pill py-1 mt-1 text-white">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                        <label class="form-check-label" for="flexSwitchCheckDefault">English</label>
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault1">
+                        <label class="form-check-label" for="flexSwitchCheckDefault1">English</label>
                     </div>
                     <!-- radion boutton end -->
 
                     <!-- collapse button for menu start -->
                     <div class="dropdown px-3 d-lg-inline">
-                        <button class="btn semi-rounded-border " href="#" role="button" id="dropdownMenuLink"
-                            data-bs-toggle="dropdown" aria-expanded="false" style="background-color:#D4FFE9;">
+                        <button class="btn semi-rounded-border " href="#" role="button" id="dropdownMenuLink1"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="background-color:#D4FFE9;">
                             <i class="fa-solid fa-bars"></i> Menu
                         </button>
 
@@ -115,18 +118,19 @@
 
         <!--topimage-->
         <div class="d-flex justify-content-center flex-column align-items-center position-relative topImage"
-            style="position: relative">
+             style="position: relative">
             <h1 class="text-success fw-bolder text">Blog</h1>
             <div class="search">
                 <form class="input-group mb-3 bg-white p-2 semi-rounded-border ">
                     <input type="text" class="form-control border-0" placeholder="&#x1F50E অনুসন্ধান করুন"
-                        aria-label="Search" aria-describedby="searchButton">
+                           aria-label="Search" aria-describedby="searchButton">
                     <button class="btn btn-success semi-rounded-border" type="submit" id="searchButton"><i
                             class="bi-search"></i>অনুসন্ধান</button>
                 </form>
             </div>
         </div>
     </div>
+
 
     <!--body container-->
     <div class="container" style="background-color: #fafffc">
@@ -168,10 +172,66 @@
                 <div class="input-group my-1">
                     <img src="assets/images/user.png" alt="..." class="rounded-circle mx-4 h-25">
                     <input type="text" class="form-control rounded-input bg-light"
-                        aria-label="Text input with dropdown button" placeholder="ব্লগ লিখুন... "
-                        style=" text-indent: 15px;">
+                           aria-label="Text input with dropdown button" placeholder="ব্লগ লিখুন... "
+                           data-bs-toggle="modal" data-bs-target="#exampleModal"
+                           style=" text-indent: 15px;">
+                    <!--  show modal-->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-success fw-bolder mx-auto" id="exampleModalLabel">ব্লগ পোস্ট তৈরী করুন</h5>
+                                    <button type="button " class="btn"  data-bs-dismiss="modal" aria-label="Close">
+                                        <i class='bx bxs-x-circle '  style='color:rgba(0,0,0,0.87)'  ></i>
+                                    </button>                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="শিরোনাম">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>ক্যাটাগরী</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative pt-2">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <button type="button" class="btn btn-light position-absolute bottom-0 end-0 m-2" id="emojiButton">
+                                                <i class="bi bi-emoji-smile"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex flex-row-reverse">
+                                            <button class="btn btn-sm btn-transparent bg-transparent text-success">
+                                                <i class='bx bx-camera' style='color:#366f3e' ></i> ক্যামেরা
+                                            </button>
+                                            <button class="btn btn-sm btn-transparent bg-transparent text-success">
+                                                <i class='bx bx-purchase-tag-alt bx-rotate-90' style='color:#366f3e' ></i> ট্যাগ
+                                            </button>
+                                            <button class="btn btn-sm btn-transparent bg-transparent text-success">
+                                                <i class='bx bx-paperclip' style='color:#366f3e'  ></i> অ্যাটাচমেন্ট
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success rounded w-100">পোস্ট করুন</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  show modal end-->
                     <button class="btn text-success border-0" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                            aria-expanded="false">
                         <i class='bx bxs-down-arrow'></i>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
@@ -189,130 +249,98 @@
 
         <!--category blogs-->
 
-        <div class="blog-post container">
-            <!-- blog post 1st row start -->
-            <div class="row my-">
-                <div class="col-sm-12 col-md-6 mt-4 mt-md-0 ">
-                    <!-- title start -->
-                    <div class=" my-1">
-                        <h3 class="text-success">ক্যাটাগরী টাইটল</h3>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <!--first blog-->
+                <div class="card my-2">
+                    <div class="card-body pb-0">
+                        <h5 class="card-title fw-bold text-success">ক্যাটাগরী টাইটল</h5>
                     </div>
-                    <!-- title end  -->
-                    <!-- image start -->
-                    <div class="blog-img my-3">
-                        <img class="w-100 h-100" src="assets/images/blog7.png" alt="">
-                    </div>
-                    <!-- image end -->
-                    <div class="date-sec my-2">
-                        <span><i class="fa-solid fa-clock-rotate-left"></i></span>
-                        <span class="text-muted mx-2">বিগত ৭ দিনে নতুন প্রশ্নোত্তর</span>
-                        <span class="text-success fw-bold">১১</span>
-                    </div>
-                    <div>
-                        <span><i class="fa-solid fa-receipt"></i></span>
-                        <span class="text-muted mx-2">মোট প্রশ্নোত্তর</span>
-                        <span class="text-success fw-bold">১২০</span>
-                    </div>
-                </div>
-                <!-- column-a end -->
-
-                <!-- column-b start  -->
-                <div class="col-sm-12 col-md-6 mt-4 mt-md-0">
-                    <div class=" my-1">
-                        <h3 class="text-success">ক্যাটাগরী টাইটল</h3>
-                    </div>
-                    <!-- image area start -->
-                    <div class="blog-img my-3">
-                        <div class="row h-100">
-                            <div class="col-7 h-100">
-                                <img class="w-100 h-100" src="assets/images/blog8.png" alt="">
-                            </div>
-                            <div class="col-5 h-100">
-                                <div class="h-50 pb-1">
-                                    <img class="h-100 w-100" src="assets/images/blog9.png" alt="">
-                                </div>
-                                <div class="h-50 pt-1">
-                                    <img class="h-100 w-100" src="assets/images/blog10.png" alt="">
-                                </div>
-                            </div>
+                    <div class="card-body">
+                        <img src="assets/images/blog1.png" class="card-img-bottom pb-4" alt="...">
+                        <div class="date-sec my-2">
+                            <span><i class="fa-solid fa-clock-rotate-left"></i></span>
+                            <span class="text-muted mx-2">বিগত ৭ দিনে নতুন প্রশ্নোত্তর</span>
+                            <span class="text-success fw-bold">১১</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-receipt"></i></span>
+                            <span class="text-muted mx-2">মোট প্রশ্নোত্তর</span>
+                            <span class="text-success fw-bold">১২০</span>
                         </div>
                     </div>
-                    <!-- image area end -->
-                    <div class="date-sec my-2">
-                        <span><i class="fa-solid fa-clock-rotate-left"></i></span>
-                        <span class="text-muted mx-2">বিগত ৭ দিনে নতুন প্রশ্নোত্তর</span>
-                        <span class="text-success fw-bold">৮</span>
-                    </div>
-                    <div>
-                        <span><i class="fa-solid fa-receipt"></i></span>
-                        <span class="text-muted mx-2">মোট প্রশ্নোত্তর</span>
-                        <span class="text-success fw-bold">২৩০</span>
-                    </div>
                 </div>
-                <!-- column-b end -->
             </div>
-            <!-- blog post 1st row end -->
-
-            <!-- blog post 2nd row start -->
-            <div class="row mt-4">
-                <div class="col-sm-12 col-md-6 mt-4 mt-md-0 ">
-                    <!-- title start -->
-                    <div class=" my-1">
-                        <h3 class="text-success">ক্যাটাগরী টাইটল</h3>
+            <div class="col-md-6 col-sm-12">
+                <!--first blog-->
+                <div class="card my-2">
+                    <div class="card-body pb-0">
+                        <h5 class="card-title fw-bold text-success">ক্যাটাগরী টাইটল</h5>
                     </div>
-                    <!-- title end  -->
-                    <!-- image start -->
-                    <div class="blog-img my-3">
-                        <div class="row h-100">
-                            <div class="col-7 h-100">
-                                <img class="w-100 h-100" src="assets/images/blog11.png" alt="">
-                            </div>
-                            <div class="col-5 h-100">
-                                <img class="w-100 h-100" src="assets/images/blog8.png" alt="">
-                            </div>
+                    <div class="card-body">
+                        <img src="assets/images/blog1.png" class="card-img-bottom pb-4" alt="...">
+                        <div class="date-sec my-2">
+                            <span><i class="fa-solid fa-clock-rotate-left"></i></span>
+                            <span class="text-muted mx-2">বিগত ৭ দিনে নতুন প্রশ্নোত্তর</span>
+                            <span class="text-success fw-bold">১১</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-receipt"></i></span>
+                            <span class="text-muted mx-2">মোট প্রশ্নোত্তর</span>
+                            <span class="text-success fw-bold">১২০</span>
                         </div>
                     </div>
-                    <!-- image end -->
-                    <div class="date-sec my-2">
-                        <span><i class="fa-solid fa-clock-rotate-left"></i></span>
-                        <span class="text-muted mx-2">বিগত ৭ দিনে নতুন প্রশ্নোত্তর</span>
-                        <span class="text-success fw-bold">১১</span>
-                    </div>
-                    <div>
-                        <span><i class="fa-solid fa-receipt"></i></span>
-                        <span class="text-muted mx-2">মোট প্রশ্নোত্তর</span>
-                        <span class="text-success fw-bold">১২০</span>
-                    </div>
                 </div>
-                <!-- column-a end -->
-
-                <!-- column-b start  -->
-                <div class="col-sm-12 col-md-6 mt-4 mt-md-0">
-                    <div class=" my-1">
-                        <h3 class="text-success">ক্যাটাগরী টাইটল</h3>
-                    </div>
-                    <!-- image area start -->
-                    <div class="blog-img my-3">
-                        <div class="h-100">
-                            <img class="w-100 h-100" src="assets/images/blog13.png" alt="">
-                        </div>
-                    </div>
-                    <!-- image area end -->
-                    <div class="date-sec my-2">
-                        <span><i class="fa-solid fa-clock-rotate-left"></i></span>
-                        <span class="text-muted mx-2">বিগত ৭ দিনে নতুন প্রশ্নোত্তর</span>
-                        <span class="text-success fw-bold">৮</span>
-                    </div>
-                    <div>
-                        <span><i class="fa-solid fa-receipt"></i></span>
-                        <span class="text-muted mx-2">মোট প্রশ্নোত্তর</span>
-                        <span class="text-success fw-bold">২৩০</span>
-                    </div>
-                </div>
-                <!-- column-b end -->
             </div>
-            <!-- blog post 2nd row end  -->
+            <div class="col-md-6 col-sm-12">
+                <!--first blog-->
+                <div class="card my-2">
+                    <div class="card-body pb-0">
+                        <h5 class="card-title fw-bold text-success">ক্যাটাগরী টাইটল</h5>
+                    </div>
+                    <div class="card-body">
+                        <img src="assets/images/blog1.png" class="card-img-bottom pb-4" alt="...">
+                        <div class="date-sec my-2">
+                            <span><i class="fa-solid fa-clock-rotate-left"></i></span>
+                            <span class="text-muted mx-2">বিগত ৭ দিনে নতুন প্রশ্নোত্তর</span>
+                            <span class="text-success fw-bold">১১</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-receipt"></i></span>
+                            <span class="text-muted mx-2">মোট প্রশ্নোত্তর</span>
+                            <span class="text-success fw-bold">১২০</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <!--first blog-->
+                <div class="card my-2">
+                    <div class="card-body pb-0">
+                        <h5 class="card-title fw-bold text-success">ক্যাটাগরী টাইটল</h5>
+                    </div>
+                    <div class="card-body">
+                        <img src="assets/images/blog1.png" class="card-img-bottom pb-4" alt="...">
+                        <div class="date-sec my-2">
+                            <span><i class="fa-solid fa-clock-rotate-left"></i></span>
+                            <span class="text-muted mx-2">বিগত ৭ দিনে নতুন প্রশ্নোত্তর</span>
+                            <span class="text-success fw-bold">১১</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-receipt"></i></span>
+                            <span class="text-muted mx-2">মোট প্রশ্নোত্তর</span>
+                            <span class="text-success fw-bold">১২০</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+
+
+
+
 
         <!--category blog end-->
     </div>
@@ -342,8 +370,8 @@
                         +8801733990436
                     </h6>
                 </div>
-                <div class="col-12 d-flex justify-content-center justify-content-lg-end ">
-                    <div class="social-media me-5 mt-3 m-lg-0">
+                <div class="col-12 d-flex justify-content-end">
+                    <div class="social-media me-5">
                         <a class="" href="#"><i
                                 class="mx-1 text-success fs-5 p-2 border border-1 border-success rounded rounded-circle fa-brands fa-facebook"></i></a>
                         <a class="" href="#"><i
@@ -357,7 +385,6 @@
             </div>
         </footer>
     </div>
-
 
 
 
